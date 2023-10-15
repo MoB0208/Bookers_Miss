@@ -1,2 +1,36 @@
-<h1>Lists#new</h1>
-<p>Find me in app/views/lists/new.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <hesd>
+
+  </hesd>
+
+  <body>
+    <p id="notice"></p>
+    <h1>Bookers</h1>
+
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Body</th>
+        <th>" "</th>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+
+    <h2>New book</h2>
+
+    <%= form_with model: @list do |f| %>
+    <p>Title</p>
+    <%= f.text_field :title %>
+
+    <p>Body</p>
+    <%= f.text_area :body %>
+
+    <%= f.submit 'Create Book' %>
+
+    <% end %>
+
+  </body>
+</html>
